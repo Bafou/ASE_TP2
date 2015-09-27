@@ -1,0 +1,11 @@
+Honoré NINTUNZE & Antoine PETIT
+
+Pour nettoyer le dossier:
+make clean
+
+Pour compiler :
+make
+
+Ceci créera les deux fichiers exectutables : pingpong (switch entre 2 contextes) et pingpongpang (switch entre 3 contextes dont 1 contexte se termine)
+
+Dans le cas où un des trois contextes se termine, le programme se termin.

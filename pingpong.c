@@ -1,3 +1,7 @@
+/*
+ * pingpong.c
+ * Authors : Honoré NINTUNZE & Antoine PETIT
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

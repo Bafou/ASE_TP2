@@ -1,7 +1,13 @@
+/*
+ * contexte.c
+ * Authors : Honoré NINTUNZE & Antoine PETIT
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
 #include "contexte.h"
+
+static struct ctx_s *current_ctx = NULL;
 
 int init_ctx (struct ctx_s *ctx, int stack_size, func_t *f, void *args) {
   ctx->stack = (unsigned char*) malloc (stack_size);

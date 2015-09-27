@@ -1,9 +1,13 @@
-CC= gcc
+CC=gcc
+CFLAGS=-m32
 
-all : pingpong
+all: pingpong pingpongpang
 
-pingpong :ping_pong.c
-	$(CC) -m32 -o pingpong contexte.c ping_pong.c
+pingpong: pingpong.c
+	$(CC) -o pingpong contexte.c pingpong.c  $(CFLAGS)
 
-pingpongpang :ping_pong_pang.c
-	$(CC) -m32 -o pingpongpang contexte.c ping_pong_pang.c
+pingpongpang: pingpongpang.c
+	$(CC) -o pingpongpang contexte.c pingpongpang.c $(CFLAGS)
+
+clean:
+	rm -f *~ *.o pingpong pingpongpang

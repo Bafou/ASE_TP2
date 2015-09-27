@@ -1,3 +1,7 @@
+/*
+ * contexte.h
+ * Authors : Honoré NINTUNZE & Antoine PETIT
+ */
 #ifndef CONTEXTE_H
 #define CONTEXTE_H
 
@@ -19,8 +23,6 @@ struct ctx_s {
   #define MAGIC 0xdeadbeef
   void *args;
 };
-
-static struct ctx_s *current_ctx = NULL;
 
 int init_ctx (struct ctx_s *ctx, int stack_size, func_t *f, void *args);
 
